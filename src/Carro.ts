@@ -14,6 +14,6 @@ class Carro {
     }
 }
 
-const carro = new Carro("Nissan", "Kckis", 2018);
+const carro = new Carro("Nissan", "Kicks", 2018);
 
 console.log(carro.detalhes());
