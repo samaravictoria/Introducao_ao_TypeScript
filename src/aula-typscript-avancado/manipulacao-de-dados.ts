@@ -14,3 +14,28 @@ function processarResposta(resposta: RespostaServidor): void {
 
 //Testando a função
 processarResposta(false);
+
+//Criando types para utilizar Intersection Types
+type Estudante = {
+    nome: string;
+    curso: string;
+};
+
+type Trabalhador = {
+    empresa: string;
+    cargo: string;
+};
+
+//Criando o Intersection Type dos dois
+type EstudanteTrabalhador = Estudante & Trabalhador;;
+
+//Criando um objeto deste type
+const estudanteTrabalhador: EstudanteTrabalhador = {
+    nome: "John Doe",
+    curso: "Engenharia de Software",
+    empresa: "Google",
+    cargo: "Desenvolvedor Frontend"
+};
+
+//Imprimindo o estudante no console
+ console.log(estudanteTrabalhador);
